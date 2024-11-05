@@ -40,7 +40,7 @@ To set up the API locally, follow these steps:
 1. **Clone the Repository**:
 
 ```bash
-git clone https:/github.com/tylerrrubino/math-cs-solver-api.git
+git clone https://github.com/tylerrubino/math-cs-solver-api.git
 cd math-cs-solver-api
 ```
 
@@ -88,7 +88,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
 
    ```json
    {
-   	"result": 15
+     "result": 15
    }
    ```
 
@@ -108,7 +108,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
 
    ```json
    {
-   	"result": 5
+     "result": 5
    }
    ```
 
@@ -128,7 +128,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
 
    ```json
    {
-   	"result": 50
+     "result": 50
    }
    ```
 
@@ -148,7 +148,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
 
    ```json
    {
-   	"result": 2
+     "result": 2
    }
    ```
 
@@ -168,7 +168,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
 
    ```json
    {
-   	"result": 120
+     "result": 120
    }
    ```
 
@@ -188,7 +188,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
 
    ```json
    {
-   	"result": 55
+     "result": 55
    }
    ```
 
@@ -208,7 +208,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
 
    ```json
    {
-   	"result": 10
+     "result": 10
    }
    ```
 
