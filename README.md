@@ -1,6 +1,6 @@
 # Math and CS Solver API
 
-The **Math and CS Solver API** is a RESTFUL API designed to handle a variety of mathematical and computer science-related calculations.This first iteration includes endpoints for basic arithmetic, factorial, Fibonacci sequence, and greatest common divisor (GCD), providing a reliable backend for math applications or learning tools.
+The **Math and CS Solver API** is a RESTFUL API designed to handle a variety of mathematical and computer science-related calculations. This first iteration includes endpoints for basic arithmetic, factorial, Fibonacci sequence, and greatest common divisor (GCD), providing a reliable backend for math applications or learning tools.
 
 ## Table of Contents
 
