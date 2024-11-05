@@ -4,13 +4,13 @@ The **Math and CS Solver API** is a RESTFUL API designed to handle a variety of 
 
 ## Table of Contents
 
-[Features](#features)
-[Tech Stack](#tech-stack)
-[Getting Started](#getting-started)
-[API Documentation](#api-documentation)
-[Future Enhancements](#future-enhancements)
-[Contributing](#contributing)
-[License](#license)
+1. [Features](#features)
+2. [Tech Stack](#tech-stack)
+3. [Getting Started](#getting-started)
+4. [API Documentation](#api-documentation)
+5. [Future Enhancements](#future-enhancements)
+6. [Contributing](#contributing)
+7. [License](#license)
 
 ## Features
 
@@ -84,7 +84,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
    GET http://localhost:5000/api/add?a=10&b=5
    ```
 
-   **Response**
+   - **Response**
 
    ```json
    {
@@ -104,7 +104,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
    GET http://localhost:5000/api/subtract?a=10&b=5
    ```
 
-   **Response**
+   - **Response**
 
    ```json
    {
@@ -124,7 +124,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
    GET http://localhost:5000/api/multiply?a=10&b=5
    ```
 
-   **Response**
+   - **Response**
 
    ```json
    {
@@ -144,7 +144,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
    GET http://localhost:5000/api/divide?a=10&b=5
    ```
 
-   **Response**
+   - **Response**
 
    ```json
    {
@@ -164,7 +164,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
    GET http://localhost:5000/api/factorial?n=5
    ```
 
-   **Response**
+   - **Response**
 
    ```json
    {
@@ -184,7 +184,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
    GET http://localhost:5000/api/fibonacci?n=5
    ```
 
-   **Response**
+   - **Response**
 
    ```json
    {
@@ -204,7 +204,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
    GET http://localhost:5000/api/gcd?a=20&b=30
    ```
 
-   **Response**
+   - **Response**
 
    ```json
    {
