@@ -20,6 +20,9 @@ The API currently supports the following calculations:
 - **Factorial Calculator**: Computes the factorial of a given integer.
 - **Fibonacci Sequence**: Calculates the GCD of two integers.
 - **Greatest Common Divisor (GCD)**: Calculates the GCD of two integers.
+- **Exponent Calculator**: Calculates the exponent of an input number, a, to the input exponent, n.
+- **Binomial Coefficient**: Calculates total number of choices/possibilities, given a set of size n, and a subset size of k, (n choose k).
+- **Euler Exponent Calculator**: Calculates eulers number (e) to the power of an input exponent, n.
 
 ## Tech Stack
 
@@ -209,6 +212,66 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
    ```json
    {
      "result": 10
+   }
+   ```
+
+5. **Binomial Coefficient**:
+
+   - **Endpoint**: `/api/binomial`
+   - **Method**: GET
+   - **Parameters**: `n`,`k` (integer)
+   - **Description**: Calculates the binomial coefficient of `n` choose `k`, where `n >= k`.
+   - **Example**:
+
+   ```http
+   GET http://localhost:5000/api/binomial?n=10&k=5
+   ```
+
+   - **Response**
+
+   ```json
+   {
+     "result": 252
+   }
+   ```
+
+6. **Exponent Calculator**:
+
+   - **Endpoint**: `/api/exponent`
+   - **Method**: GET
+   - **Parameters**: `a`,`n` (integer)
+   - **Description**: Calculates the value of of `a` to the exponent `n`.
+   - **Example**:
+
+   ```http
+   GET http://localhost:5000/api/exponent?a=10&n=5
+   ```
+
+   - **Response**
+
+   ```json
+   {
+     "result": 100000
+   }
+   ```
+
+7. **Euler Exponent Calculator**:
+
+   - **Endpoint**: `/api/euler`
+   - **Method**: GET
+   - **Parameters**: `n` (integer)
+   - **Description**: Calculates the value of of eulers number (e) to the exponent `n`.
+   - **Example**:
+
+   ```http
+   GET http://localhost:5000/api/euler?n=5
+   ```
+
+   - **Response**
+
+   ```json
+   {
+     "result": 148.4131591025766
    }
    ```
 

@@ -24,4 +24,13 @@ router.get('/factorial', mathController.factorial);
 // FIBONACCI endpoint
 router.get('/fibonacci', mathController.fibonacci);
 
+// BINOMIAL COEFFICIENT endpoint
+router.get('/binomial', mathController.binomialCoefficient);
+
+// EXPONENT endpoint
+router.get('/exponent', mathController.exponent);
+
+// EULER EXPONENT endpoint
+router.get('/euler', mathController.eulersExponent);
+
 module.exports = router;
