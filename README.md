@@ -23,6 +23,7 @@ The API currently supports the following calculations:
 - **Exponent Calculator**: Calculates the exponent of an input number, a, to the input exponent, n.
 - **Binomial Coefficient**: Calculates total number of choices/possibilities, given a set of size n, and a subset size of k, (n choose k).
 - **Euler Exponent Calculator**: Calculates eulers number (e) to the power of an input exponent, n.
+- **Derivative Calculator**: Calculates the first derivative of a given expression.
 
 ## Tech Stack
 
@@ -91,7 +92,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
 
    ```json
    {
-     "result": 15
+   	"result": 15
    }
    ```
 
@@ -111,7 +112,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
 
    ```json
    {
-     "result": 5
+   	"result": 5
    }
    ```
 
@@ -131,7 +132,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
 
    ```json
    {
-     "result": 50
+   	"result": 50
    }
    ```
 
@@ -151,7 +152,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
 
    ```json
    {
-     "result": 2
+   	"result": 2
    }
    ```
 
@@ -171,7 +172,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
 
    ```json
    {
-     "result": 120
+   	"result": 120
    }
    ```
 
@@ -191,7 +192,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
 
    ```json
    {
-     "result": 55
+   	"result": 55
    }
    ```
 
@@ -211,7 +212,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
 
    ```json
    {
-     "result": 10
+   	"result": 10
    }
    ```
 
@@ -231,7 +232,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
 
    ```json
    {
-     "result": 252
+   	"result": 252
    }
    ```
 
@@ -251,7 +252,7 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
 
    ```json
    {
-     "result": 100000
+   	"result": 100000
    }
    ```
 
@@ -271,9 +272,40 @@ Below are the available endpoints in this first iteration. Each endpoint accepts
 
    ```json
    {
-     "result": 148.4131591025766
+   	"result": 148.4131591025766
    }
    ```
+
+8. **Derivative (differentiation) Calculator**:
+
+   - **Endpoint**: `/api/derivative`
+   - **Method**: POST
+   - **Parameters**: `function` (the function expression), `variable` (variable to which we're deriving, ex: x, t, s, etc...)
+   - **Description**: Calculates the first derivative of a given `function` (function) in respect to a `variable` .
+   - **Example**:
+
+   ```http
+   POST http://localhost:5000/api/derivative
+   ```
+
+   Body:
+
+   ```JSON
+   {
+   	"function": "x^2 + 2x + 7",
+    "variable": "x"
+   }
+   ```
+
+   - **Response**
+
+   ```json
+   {
+   	"result": "2\\cdot\\left( x+1\\right)"
+   }
+   ```
+
+   - Note: the frontend handles formatting to display nicely.
 
 ## Future Enhancements
 

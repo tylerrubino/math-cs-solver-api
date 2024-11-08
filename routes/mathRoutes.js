@@ -33,4 +33,7 @@ router.get('/exponent', mathController.exponent);
 // EULER EXPONENT endpoint
 router.get('/euler', mathController.eulersExponent);
 
+// DERIVATIVE endpoint
+router.post('/derivative', mathController.derivative);
+
 module.exports = router;
